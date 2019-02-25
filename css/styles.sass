@@ -1,0 +1,219 @@
+$dark-blue: #0b3c5d;
+$sky-blue: #328cc1;
+$gold-leaf: #d9b310;
+$black: #1d2731;
+$off-white: #fffef7;
+
+$title-font: "Merriweather", serif;
+$body-font: "Montserrat", sans-serif;
+$accent-font: "Raleway", sans-serif;
+
+body {
+    margin: 0;
+    background-color: $sky-blue;
+    font-family: $title-font;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    font-size: 16px;
+}
+
+canvas {
+    display: block;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+.name-header {
+    position: absolute;
+    left: 8vw;
+    top: 22vh;
+    color: $off-white;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+}
+
+.subtitle {
+    position: absolute;
+    left: 8vw;
+    top: 34vh;
+    color: $off-white;
+    font-size: 32px;
+
+    .label-dev {
+        margin-right: 0.5vw;
+        transition: color 0.4s ease-in-out;
+    }
+
+    .label-mentor {
+        margin-left: 0.5vw;
+        transition: color 0.4s ease-in-out;
+    }
+}
+
+.label-dev:hover, .label-mentor:hover {
+    color: $dark-blue;
+    cursor: pointer;
+}
+
+.content-wrapper {
+    padding-top: 105vh;
+}
+
+.flex-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.project-wrapper {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    background-color: $sky-blue;
+}
+
+.skills-wrapper {
+    height: 60vh;
+    width: 100%;
+    background-color: $black;
+    display: flex;
+}
+
+.skills-title {
+    flex: 2;
+}
+  
+.skills-box {
+    flex: 3;
+    height: 40vh;
+}
+  
+  /* Need to specify media query */
+.footer {
+    height: 30vh;
+    width: 100%;
+    background-color: $sky-blue;
+}
+
+.chapter-title {
+    flex: 1;
+    text-align: center;
+    /* background-color: rgba(68, 74, 77, 1); */
+    background-color: $dark-blue;
+    color: $off-white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  .chapter-content {
+    flex: 1;
+    text-align: center;
+    background-color: $off-white;
+    color: $black;
+  }
+  
+  /* Need to specify media query */
+  .chapter-heading {
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    position: relative;
+    top: 40%;
+  }
+
+  /* Need to specify media query */
+  .content-button {
+    font-family: $accent-font;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: relative;
+    width: 20%;
+    border: solid $black;
+    border-width: 1px;
+    padding: 0.85em 2em 0.83em;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .content-button:hover {
+    background-color: $black;
+    color: $off-white;
+    border-color: $dark-blue;
+  }
+  
+  /* Need to specify media query */
+  .headshot {
+    position: relative;
+    top: 18vh;
+    width: 135px;
+    height: auto;
+  }
+
+  .chapter-content {
+
+      .content-title {
+        position: relative;
+        font-weight: 700;
+        font-size: 20px;
+        font-family: $title-font;
+      }
+
+        .content-title-1 {
+            top: 6.5vh;
+        }
+
+        .content-1 {
+            position: relative;
+            top: 8.5vh;
+            padding: 0px 45px 0px 45px;
+            font-family: $body-font;
+            line-height: 120%;
+        } 
+
+        .content-button-1 {
+            top: 11vh;
+            left: 35.5%; 
+        }
+
+        .content-title-2 {
+            top: 22vh;
+            padding: 0px 40px 0px 40px;
+        }
+
+        .content-2 {
+            position: relative;
+            top: 23vh;
+            font-family: $body-font;
+            padding: 0px 60px 0px 60px;
+            line-height: 120%;
+        }
+
+        .content-button-2 {
+            top: 24vh;
+            left: 35.5%; 
+        }
+  }
+
+  .project-title {
+    h1 {
+        display: inline-block;
+        position: relative;
+        top: 6vh;
+        left: 10vw;
+        font-size: 40px;
+        color: $off-white;
+    }
+
+    p {
+        position: relative;
+        left: 10vw;
+        font-size: 20px;
+        width: 70%;
+        top: 3vh;
+        line-height: 120%;
+        color: #fffef7;
+    }
+  }
