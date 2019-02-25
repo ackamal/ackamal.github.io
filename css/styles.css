@@ -228,6 +228,11 @@ body {
     font-size: 40px;
     color: #fffef7;
   }
+
+  .skills-title p a {
+    color: #328cc1;
+    text-decoration: none;
+  }
   
   .skills-title p {
     position: relative;
