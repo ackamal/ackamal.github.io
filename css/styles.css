@@ -89,6 +89,12 @@
     .subtitle .label-mentor {
       margin-left: 0.5vw;
     }
+
+    #arrow-down {
+      top: 90vh;
+      left: 49vw;
+      max-width: 40px;
+    }
   
     /* Controls "About Me" section and its text */
   
@@ -353,12 +359,34 @@
   .subtitle .label-dev, .subtitle .label-mentor {
     transition: color 0.4s ease-in-out;
   }
+
+  .v-icon-col {
+    float: right;
+    right: 200px;  
+    /* flex-direction: column; */
+  }
+
+  .v-icon-pack {
+    position: relative;
+
+  }
+
+  #arrow-down {
+    position: absolute;
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #arrow-down:hover {
+    cursor: pointer;
+  }
   
-  .label-dev:hover, 
+  /* .label-dev:hover, 
   .label-mentor:hover {
     color: var(--dark-blue);
     cursor: pointer;
-  }
+  } */
   
   .content-wrapper {
     padding-top: 105vh;
@@ -434,7 +462,7 @@
   }
   
   .content-button:hover {
-    background-color: var(--black);
+    background-color: var(--dark-blue);
     color: var(--white);
     border-color: var(--dark-blue);
   }

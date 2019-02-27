@@ -40,6 +40,9 @@ var setup_module = (function() {
         insta_link : document.getElementById("insta-top"),
   
         reset_link : document.getElementById('link-up'),
+
+        canvas : document.getElementById('particles-js'),
+        entry_arrow : document.getElementById('arrow-down'),
   
         
     }
@@ -242,31 +245,43 @@ var setup_module = (function() {
                 effects.desc_3.style.opacity = 0;
             }
         });
+
+        effects.canvas.addEventListener("mousemove", function(event) {
+          effects.entry_arrow.style.opacity = 0.75;
+          setTimeout(function() {
+            effects.entry_arrow.style.opacity = 0;
+          }, 5000);
+        });
+
+        effects.entry_arrow.addEventListener("click", function(event) {
+          smooth_scroll(".chapter-title", 1200);
+        });
+
   
         effects.cont_btn_1.addEventListener("click", function(event) {
             smooth_scroll(".project-wrapper", 1200);
         });
   
-        effects.label_dev.addEventListener("click", function(event) {
-            smooth_scroll(".project-wrapper", 1200);
+        // effects.label_dev.addEventListener("click", function(event) {
+        //     smooth_scroll(".project-wrapper", 1200);
   
-            setTimeout(function(){
-                effects.dev_info.style.backgroundColor = "#fffef7";
-            }, 1000); 
+        //     setTimeout(function(){
+        //         effects.dev_info.style.backgroundColor = "#fffef7";
+        //     }, 1000); 
   
-            effects.dev_info.style.backgroundColor = "#328cc1";
+        //     effects.dev_info.style.backgroundColor = "#328cc1";
   
-        });
+        // });
   
-        effects.label_mentor.addEventListener("click", function(event) {
-            smooth_scroll(".project-wrapper", 1200);
+        // effects.label_mentor.addEventListener("click", function(event) {
+        //     smooth_scroll(".project-wrapper", 1200);
   
-            setTimeout(function(){
-                effects.mentor_info.style.backgroundColor = "#fffef7";
-            }, 1000); 
+        //     setTimeout(function(){
+        //         effects.mentor_info.style.backgroundColor = "#fffef7";
+        //     }, 1000); 
   
-            effects.mentor_info.style.backgroundColor = "#328cc1";
-        });
+        //     effects.mentor_info.style.backgroundColor = "#328cc1";
+        // });
   
         effects.cont_btn_2.addEventListener("click", function(event) {
             smooth_scroll("#hobby-content", 1200);
