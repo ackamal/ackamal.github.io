@@ -1,6 +1,3 @@
-# ackamal.github.io
-Web Portfolio
-
 # [My website](https://ackamal.github.io/).
 
 ## HTML, CSS, JavaScript/ES6.
