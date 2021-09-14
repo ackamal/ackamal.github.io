@@ -1,0 +1,219 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --bg-primary: #202020;
+    --bg-secondary: #1a1a1a;
+    --border-color: rgba(185, 185, 185, 0.11);
+    --text-normal: #dcddde;
+    --text-muted: #999;
+    --text-accent: #8875ff;
+    --accent: #483699;
+    --menu-speed: 0.75s;
+}
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.4;
+    color: var(--text-normal);
+    background-color: var(--bg-primary);
+}
+
+@media screen and (max-width:599px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about .left-column {
+        width: 23%;
+        margin-right: 20px;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-title {
+    transition:  4s ease-in-out;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    font-size: 1.3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: 0.2s;
+}
+
+.nav-item-bar {
+    padding-right: 40px;
+}
+
+.clickable:hover {
+    color:var(--text-accent);
+}
+
+.nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.s1, .s3, footer {
+    background-color: var(--bg-primary);
+}
+
+.s2 {
+    padding: 40px;
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.s3 {
+    padding: 40px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.splash-title {
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-normal);
+    font-size: 3rem;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.splash-title a {
+    text-decoration: none;
+    color: var(--text-normal);  
+    transition: 0.2s;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    color:var(--text-muted);
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.about p, .about div a{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.about .left-column {
+    margin-bottom: 20px;
+}
+
+.contact-bar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.contact-bar a {
+    transition: 0.2s;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.contact-bar a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-bar a div {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+.contact-bar a:hover {
+    color:var(--text-accent);
+}
+
+.text-link {
+    text-decoration: none;
+}
+
+
+.placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background: url("/img/Akshay-34\ \(2\).jpg") no-repeat;
+    background-size: contain;
+    transform: translateZ(0);
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 15px;
+    font-size: 0.8rem;
+}
+
+footer .left-column {
+    padding-left: 20px;
+}
+
+footer .right-column {
+    padding-right: 20px;
+}
+
+footer .right-column a {
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: 0.2s;
+}
+
+footer .right-column a:hover {
+    color: var(--text-accent);
+}
